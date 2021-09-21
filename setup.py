@@ -2,10 +2,10 @@ import setuptools
 
 setuptools.setup(
     name='tracardi-scaffold',
-    version='1.5',
+    version='1.7',
     # scripts=['./cmd/tracardi-scaffold'],
     entry_points={
-        'console_scripts': ['mybinary=tracardi_plugin_scaffold.create_plugin:cli'],
+        'console_scripts': ['tps=tracardi_plugin_scaffold.create_plugin:cli'],
     },
     author='Me',
     description='This runs my tracardi plugin scaffold.',
