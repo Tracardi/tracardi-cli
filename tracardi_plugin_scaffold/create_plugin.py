@@ -3,6 +3,9 @@ import zipfile
 from jinja2 import Template
 
 
+local_dir = os.path.dirname(os.path.realpath(__file__))
+
+
 def get(label):
     string = ""
     while string == "":
@@ -31,7 +34,7 @@ plugin_author = get("Plug-in author > ")
 plugin_author_email = get("Plug-in author email> ")
 plugin_class = get("Plugin class > ")
 
-with zipfile.ZipFile('plugin_scaffold.zip', 'r') as zip_ref:
+with zipfile.ZipFile(os.path.join(local_dir,'plugin_scaffold.zip'), 'r') as zip_ref:
     zip_ref.extractall(".")
 
 replacements = {
