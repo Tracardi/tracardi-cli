@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='tracardi-scaffold',
-    version='1.8',
+    version='1.9',
     entry_points={
         'console_scripts': ['tps=tracardi_plugin_scaffold.create_plugin:cli'],
     },
