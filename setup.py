@@ -2,11 +2,11 @@ import setuptools
 
 setuptools.setup(
     name='tracardi-cli',
-    version='1.1',
+    version='1.3',
     entry_points={
         'console_scripts': ['tracardi=tracardi_cli.main:cli'],
     },
-    author='Me',
+    author='Risto Kowaczewski',
     description='This is tracardi CLI.',
     packages=['tracardi_cli'],
     install_requires=[

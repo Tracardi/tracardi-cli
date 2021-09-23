@@ -80,7 +80,7 @@ def cli():
             replace(f"{location}/setup.py", replacements)
             replace(f"{location}/build.sh", replacements)
             replace(f"{location}/plugin/plugin.py", replacements)
-            replace(f"{location}/test/manual_test.py", replacements)
+            replace(f"{location}/plugin/test/manual_test.py", replacements)
 
             os.rename(f"{location}/plugin", f"{location}/{package}")
 
