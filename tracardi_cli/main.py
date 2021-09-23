@@ -21,7 +21,7 @@ def replace(file, replacements):
         content = t.render(**replacements)
         with open(file, "w") as w:
             w.write(content)
-            print("C")
+            print(f"File {file} created.")
 
 
 def logo():

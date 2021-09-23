@@ -4,7 +4,7 @@ setuptools.setup(
     name='tracardi-cli',
     version='1.1',
     entry_points={
-        'console_scripts': ['tracardi=tracardi_cli.create_plugin:cli'],
+        'console_scripts': ['tracardi=tracardi_cli.main:cli'],
     },
     author='Me',
     description='This is tracardi CLI.',
