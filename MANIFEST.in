@@ -1,1 +1,1 @@
-recursive-include tracardi_plugin_scaffold/ *
+recursive-include tracardi_cli/ *

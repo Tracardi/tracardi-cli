@@ -1,16 +1,17 @@
 import setuptools
 
 setuptools.setup(
-    name='tracardi-scaffold',
-    version='1.9',
+    name='tracardi-cli',
+    version='1.1',
     entry_points={
-        'console_scripts': ['tps=tracardi_plugin_scaffold.create_plugin:cli'],
+        'console_scripts': ['tracardi=tracardi_cli.create_plugin:cli'],
     },
     author='Me',
-    description='This runs my tracardi plugin scaffold.',
-    packages=['tracardi_plugin_scaffold'],
+    description='This is tracardi CLI.',
+    packages=['tracardi_cli'],
     install_requires=[
         'setuptools',
+        'argparse',
         'jinja2'
     ],
     python_requires='>=3.5',
