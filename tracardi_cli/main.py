@@ -59,7 +59,7 @@ def cli():
             print("Describe what plug-in odes in one sentence.")
             plugin_description = get("Plug-in on line description > ")
             plugin_author = get("Plug-in author > ")
-            plugin_author_email = get("Plug-in author email> ")
+            plugin_author_email = get("Plug-in author email > ")
             plugin_class = get("Plugin class > ")
 
             with zipfile.ZipFile(os.path.join(local_dir, 'plugin_scaffold.zip'), 'r') as zip_ref:
